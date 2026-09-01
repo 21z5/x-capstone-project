@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us - Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <p>Get in touch with our team.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dealership</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or support.</p>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Our Office</h3>
+                <p>123 Car Street, Dealership City</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Email: support@dealership.com</p>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
