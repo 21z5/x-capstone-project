@@ -2,49 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Car Dealership</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dealership</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
-                </ul>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dealership</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="margin-top: 50px;">
+        <div class="card" style="width: 50%; margin: auto; display: flex;">
+            <img src="/static/person.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">About Us</h5>
+                <p class="card-text">Welcome to Best Cars dealership, home to the best cars in North America. We sell domestic and imported cars of all makes and models.</p>
             </div>
         </div>
-    </nav>
-
-    <div class="container mt-5">
-        <h1>About Us</h1>
-        <p>Welcome to our Car Dealership Capstone Project. We provide the best cars and reliable customer service.</p>
-        
-        <div class="row text-center mt-4">
-            <div class="col-md-4">
-                <img src="static/images/person1.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
-                <h2>John Doe</h2>
-                <p>Lead Developer</p>
-                <p>Responsible for backend architecture and API integration.</p>
-                <p><a href="mailto:john@dealership.com">john@dealership.com</a></p>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-top: 50px; justify-content: space-evenly;">
+        <div class="card" style="width: 18rem;">
+            <img src="/static/person.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">John has over 15 years of experience in the automotive industry...</p>
+                <p>john@cardealership.com</p>
             </div>
-            <div class="col-md-4">
-                <img src="static/images/person2.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
-                <h2>Jane Smith</h2>
-                <p>UI/UX Designer</p>
-                <p>Designed the user interface and frontend components.</p>
-                <p><a href="mailto:jane@dealership.com">jane@dealership.com</a></p>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/static/person.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">Jane ensures every customer finds the perfect vehicle...</p>
+                <p>jane@cardealership.com</p>
             </div>
-            <div class="col-md-4">
-                <img src="static/images/person3.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
-                <h2>Mike Johnson</h2>
-                <p>Project Manager</p>
-                <p>Oversees project delivery, deployment, and testing.</p>
-                <p><a href="mailto:mike@dealership.com">mike@dealership.com</a></p>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/static/person.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mike Johnson</h5>
+                <p class="card-text">Mike oversees our rigorous multi-point vehicle inspection...</p>
+                <p>mike@cardealership.com</p>
             </div>
         </div>
     </div>
