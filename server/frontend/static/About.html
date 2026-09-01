@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us - Car Dealership</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>Welcome to our Car Dealership Capstone Project.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dealership</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>About Us</h1>
+        <p>Welcome to our Car Dealership Capstone Project. We provide the best cars and reliable customer service.</p>
+        
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <img src="static/images/person1.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
+                <h2>John Doe</h2>
+                <p>Lead Developer</p>
+                <p>Responsible for backend architecture and API integration.</p>
+                <p><a href="mailto:john@dealership.com">john@dealership.com</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/person2.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
+                <h2>Jane Smith</h2>
+                <p>UI/UX Designer</p>
+                <p>Designed the user interface and frontend components.</p>
+                <p><a href="mailto:jane@dealership.com">jane@dealership.com</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="static/images/person3.jpg" alt="Team Member" class="rounded-circle" width="140" height="140">
+                <h2>Mike Johnson</h2>
+                <p>Project Manager</p>
+                <p>Oversees project delivery, deployment, and testing.</p>
+                <p><a href="mailto:mike@dealership.com">mike@dealership.com</a></p>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
